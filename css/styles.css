@@ -33,7 +33,6 @@ a:hover {
 }
 
 .landing .center {
-  /* background-color: #333; */
   width: 50%;
   margin: auto;
   display: flex;
@@ -42,33 +41,16 @@ a:hover {
   text-align: center;
 }
 
-/* .landing .row {
-  width: 66%;
-  margin: auto;
-} */
-
 .landing img {
   width: 150px;
   border-radius: 50%;
   margin: auto;
 }
 
-/* .landing-left {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.landing-right {
-  flex-grow: 3;
-} */
-
 .landing h1 {
   font-size: 3em;
   font-weight: 800;
   margin: 0 0;
-  /* border-bottom: 1px solid #333; */
   padding-bottom: 0.25em;
 }
 
@@ -107,8 +89,6 @@ a:hover {
 
 nav {
   background-color: rgba(0, 0, 0, 0);
-  /* position: fixed;
-  top: 0; */
   width: 100%;
   padding: .75em;
   display: flex;
