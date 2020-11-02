@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-  color: #75D5C0;
+  color: #51c9af;
   cursor: pointer;
 }
 
@@ -47,13 +47,6 @@ a:hover {
   margin: auto;
 }
 
-.landing h1 {
-  font-size: 3em;
-  font-weight: 800;
-  margin: 0 0;
-  padding-bottom: 0.25em;
-}
-
 .landing p {
   font-size: 1.5em;
 }
@@ -78,6 +71,33 @@ a:hover {
   color: #555;
 }
 
+/* Arrow */
+
+.arrow {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.arrow i {
+  font-size: 1.75em;
+  margin-bottom: .3em;
+}
+
+.arrow a {
+  color: rgba(0, 0, 0, .4);
+  transition: color .3s;
+}
+
+.arrow a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
 #particles-js {
   position: absolute;
   width: 100%;
@@ -95,6 +115,13 @@ nav {
   flex-direction: row;
   justify-content: center;
   z-index: 2;
+  transition: background-color 1s;
+}
+
+nav.fixed {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, .9);
 }
 
 nav li {
@@ -114,10 +141,6 @@ nav a {
   color: #000;
 }
 
-.arrow {
-  text-align: center;
-}
-
 .row {
   display: flex;
   flex-direction: row;
@@ -131,22 +154,14 @@ nav a {
   z-index: 0;
 }
 
-/* Arrow */
-
-.arrow p {
-  font-size: 5em;
-  margin: 0 0 0.5em 0;
-  opacity: 0.5;
-  font-weight: 800;
-}
-
 /* Content */
 
 .content {
   width: 75%;
   margin: auto;
+  padding: 1.75em 0;
 }
 
-.bg {
-  background-color: #efefef;
+section:nth-child(2n+1) {
+  background: #efefef;
 }
